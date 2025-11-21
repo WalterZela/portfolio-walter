@@ -1,0 +1,301 @@
+:root {
+    --oscuro: #313647;
+    --gris-azul: #435663;
+    --verde: #a3b087;
+    --crema: #fff8d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--oscuro);
+    color: var(--crema);
+}
+
+/* NAV */
+.barranavega {
+    background-color: var(--crema);
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    color: var(--oscuro);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    color: var(--gris-azul);
+}
+
+/* INICIO */
+.inicio {
+    text-align: center;
+    padding: 200px 20px;
+    background-image: url(../imagenes/imageninicio.jpg);
+    background-size: cover;
+}
+
+.inicio h1 span {
+    color: var(--verde);
+}
+.inicio h1{
+    font-size: 50px;
+}
+.inicio p{
+    font-size: 30px;
+}
+
+.redes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.redes a:hover {
+    color: var(--crema);
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--verde);
+}
+
+/* SOBRE MI */
+
+.sobre-mi {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre-mi h2 {
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.sobre-mi h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    margin: 8px auto 0;
+    background-color: var(--verde);
+}
+
+/* Contenedor con dos columnas */
+.sobre-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Texto a la izquierda */
+.sobre-texto {
+    max-width: 550px;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.sobre-texto p {
+    margin-bottom: 18px;
+}
+
+/* Lista */
+.sobre-lista {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.sobre-lista li {
+    margin-bottom: 10px;
+    color: var(--crema);
+    font-size: 1rem;
+}
+
+/* Carta a la derecha */
+.sobre-carta {
+    background-color: var(--gris-azul);
+    padding: 20px;
+    width: 260px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.sobre-foto {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+/* HABILIDADES */
+
+.habilidades {
+    text-align: center;
+}
+
+.contenedor-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.habcarta {
+    background-color: var(--gris-azul);
+    width: 230px;
+    padding: 25px;
+    border-radius: 14px;
+    color: var(--crema);
+    text-align: left;
+    border: 2px solid transparent;
+}
+
+.habcarta:hover {
+    background-color: var(--oscuro);
+    border-color: var(--verde);
+}
+
+.habcarta h3 {
+    margin-bottom: 10px;
+    color: var(--verde);
+    font-size: 1.2rem;
+}
+
+.habcarta p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: var(--crema);
+}
+
+
+/* PROYECTOS */
+.proyec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.carta {
+    background-color: var(--gris-azul);
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.carta .ver{
+    align-self: flex-start;
+}
+
+.carta h3 {
+    color: var(--verde);
+}
+
+.carta p {
+    margin: 10px 0;
+    flex-grow: 1;
+}
+
+
+.ver {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: var(--verde);
+    color: var(--oscuro);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.ver:hover {
+    background-color: var(--crema);
+}
+.proyectos{
+    background-image: url(../imagenes/imagenproyecto.jpg);
+}
+
+/* FORMULARIO */
+.formulario {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.formulario label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--verde);
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 5px;
+    background-color: var(--crema);
+    color: var(--oscuro);
+}
+
+.formulario textarea {
+    height: 120px;
+}
+
+.formulario button {
+    padding: 12px;
+    background-color: var(--verde);
+    border: none;
+    color: var(--oscuro);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.formulario button:hover {
+    background-color: var(--crema);
+}
+
+/* Pie de Pagina */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--gris-azul);
+}
+
+
